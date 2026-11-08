@@ -62,3 +62,7 @@ Sistem hareket azaltma tercihi, gerçek mobil cihazlar, Safari/Firefox ve ekran 
 ### Dönüşümlü yatay geçişler
 
 1366×850 görünümde ikinci sahnenin metni başlangıçta -173 px, üçüncü sahneninki +173 px yatay ötelenmiş olarak gözlendi. İkinci sahneye gelindiğinde metin 0 px ve tam görünür, ilk metin sağa ötelenmiş ve görünmezdi. Toplam sabitleme mesafesi 1275 px (1.5 ekran yüksekliği); önceki 2380 px mesafeye göre yaklaşık %46 azaldı. Kaynak/build kontrolleri geçti.
+
+### 8 Kasım 2026 — Ekipman fotoğraf geçişi
+
+Keskin gizle/göster davranışı, 0.75 saniyelik çapraz solma ve 1.1 saniyelik hafif yakınlaşma hareketiyle değiştirildi. Görseller DOM'da kalır; yalnızca etkin fotoğraf erişilebilirlik ağacında yer alır. Hareket azaltma tercihinde CSS geçişi kapatılır. Tarayıcıda iki fotoğrafın ara opaklıkları 0.526 / 0.474 olarak gözlendi; geçişin anlık olmadığı doğrulandı. Build ve kaynak kontrolleri geçti.

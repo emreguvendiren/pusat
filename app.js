@@ -95,7 +95,13 @@ if (gsap && ScrollTrigger) {
   const labels = ['Kamyon üzeri vinç', 'Bom erişimi', 'Şantiye çalışması'];
 
   const showScene = (index) => {
-    pictures.forEach((picture, i) => { picture.hidden = i !== index; });
+    pictures.forEach((picture, i) => {
+      // Keep both layers rendered so CSS can blend the photographs instead
+      // of abruptly removing the outgoing image with display:none.
+      picture.hidden = false;
+      picture.classList.toggle('is-active', i === index);
+      picture.setAttribute('aria-hidden', String(i !== index));
+    });
     progress.forEach((segment, i) => segment.classList.toggle('is-active', i === index));
     chapters.forEach((chapter, i) => chapter.classList.toggle('is-current', i === index));
     document.querySelector('#scene-caption').textContent = labels[index];

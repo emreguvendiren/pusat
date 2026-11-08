@@ -69,3 +69,5 @@ Sarı; eylemler, bölüm numaraları ve vurgu için kullanılır. Açık hizmet 
 ### Yatay geçiş güncellemesi
 
 İlk geçişte metin sağa çıkar, ikinci sahnenin metni soldan sağa gelir. Sonraki geçişte metin sola çıkar, üçüncü sahnenin metni sağdan sola gelir. Fotoğraf perdesi aynı yatay yönü izler. Kaydırma alanı 2.8 ekran yüksekliğinden 1.5 ekran yüksekliğine indirildi; scrub 0.7 ve sahneye yerleşme süresi 0.45 saniye oldu.
+
+Ekipman fotoğrafları 0.75 saniyelik çapraz solma ve hafif ölçek hareketiyle değişir. Fotoğraf üzerindeki işaretler aynı katmanda sabit kalır; hareket azaltma tercihi geçişi devre dışı bırakır.

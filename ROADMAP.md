@@ -198,3 +198,11 @@ Her faz sonunda tamamlanan kutular işaretlenir; açık sorunlar ve doğrulama s
 - SEO ve WhatsApp için toplam 5 otomatik test geçti. GSAP olmadan temel etkileşimler ve klavye odak çevrimi ayrıca tarayıcıda kontrol edildi.
 
 - Son görsel düzenleme: Açılış metinleri dönüşümlü soldan/sağdan geliyor; kaydırma mesafesi yaklaşık %46 kısaltıldı.
+
+## 8 Kasım 2026 — SEO uygulaması
+
+- Yerel hizmet başlığı ve giriş içeriği iyileştirildi; dört soruluk bilgi alanı eklendi.
+- İşletme/site/sayfa/hizmet verileri bir JSON-LD grafiğine bağlandı. Adres teyit edilmediği için Organization kullanılıyor; doğrulanmamış yerel işletme ayrıntıları eklenmedi.
+- Üretim sitemap'ine üç gerçek saha fotoğrafı eklendi.
+- Paketleme sırasında zorunlu SEO denetimi eklendi: üretim 20/20, önizleme 12/12 kontrol geçti; toplam 8 otomatik test başarılı.
+- Sonraki dış adımlar: kesin alan adıyla yayın, Search Console doğrulaması/sitemap gönderimi, varsa Google İşletme Profili bağlantısı. Bunlar henüz yapılmadı.

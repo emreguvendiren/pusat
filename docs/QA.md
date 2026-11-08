@@ -66,3 +66,13 @@ Sistem hareket azaltma tercihi, gerçek mobil cihazlar, Safari/Firefox ve ekran 
 ### 8 Kasım 2026 — Ekipman fotoğraf geçişi
 
 Keskin gizle/göster davranışı, 0.75 saniyelik çapraz solma ve 1.1 saniyelik hafif yakınlaşma hareketiyle değiştirildi. Görseller DOM'da kalır; yalnızca etkin fotoğraf erişilebilirlik ağacında yer alır. Hareket azaltma tercihinde CSS geçişi kapatılır. Tarayıcıda iki fotoğrafın ara opaklıkları 0.526 / 0.474 olarak gözlendi; geçişin anlık olmadığı doğrulandı. Build ve kaynak kontrolleri geçti.
+
+### 8 Kasım 2026 — SEO uygulaması
+
+- Yerel üretim paketinde 20/20 SEO denetimi, önizlemede 12/12 denetim geçti. Bunlar Google sıralama puanı değildir.
+- WhatsApp ve SEO için toplam 8 otomatik test geçti; yanlış canonical, noindex, kapalı robots ve görünür içerikle uyuşmayan hizmet kataloğu senaryoları da test edildi.
+- Organization, WebSite, WebPage ve Service grafiği; doğrulanmış telefon/bölge bilgileri ve görünür hizmet kataloğu ile üretildi.
+- Ana sayfa ve üç fotoğraflı sitemap, mutlak paylaşım görseli ve canonical aynı üretim adresini kullandı. Testten sonra yerel sürüm yeniden önizleme moduna döndürüldü.
+- Soru-cevap bölümünün masaüstü ve 390 px mobil genişlikte açılması doğrulandı; yatay taşma yok.
+- Açılır bölümler sayfa yüksekliğini değiştirince ScrollTrigger ölçümleri yenileniyor.
+- Orijinal ham raporlar `docs/seo-audit-production.json` ve `docs/seo-audit-preview.json` dosyalarında. Dış yayın, Google indeksleme başvurusu veya hesap bağlantısı yapılmadı.

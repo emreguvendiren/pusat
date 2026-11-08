@@ -21,6 +21,7 @@ Kontroller:
 ```sh
 npm run check
 npm test
+npm run seo:check
 ```
 
 `check` öncesinde bir kez build alınmalıdır; build GSAP dosyalarını yerel varlık klasörüne kopyalar. Windows'ta npm başlatıcısı sorun çıkarırsa `node "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js" run build` biçimi kullanılabilir.
@@ -40,6 +41,8 @@ npm test
 - `CONTENT.md`: Teyit edilmiş bilgiler ve açık içerik konuları.
 - `DESIGN.md`: Güncel tasarım kararları.
 - `docs/QA.md`: Yapılan kontroller ve test sınırları.
+- `docs/SEO.md`: SEO uygulaması ve yayın sonrası arama görünürlüğü adımları.
+- `scripts/audit-seo.mjs`: Önizleme ve üretim paketleri için teknik SEO denetimi.
 - `ROADMAP.md`: Fazlar ve ilerleme.
 - `code.html`, `screen.png`, `DESIGN.reference.md`: İlk prototip referansları. Aktif sitede kullanılmaz, build'e dahil edilmez.
 
@@ -57,3 +60,5 @@ npm test
 Alan adı kesinleşince `node scripts/build.mjs --site-url=https://kesin-alan-adi` canonical, sosyal paylaşım, sitemap ve robots adreslerini üretir. Adres verilmezse önizleme `noindex` olarak oluşturulur. Ayrıntılar `docs/DEPLOYMENT.md` dosyasındadır. Gerçek mobil cihaz, diğer tarayıcılar ve performans ölçümü bekleyen işlerdir. Şu an yalnızca yerel sürüm hazırlanmıştır.
 
 GSAP uygulaması için başvurulan resmi dokümanlar: [ScrollTrigger](https://gsap.com/docs/v3/Plugins/ScrollTrigger/) ve [gsap.matchMedia](https://gsap.com/docs/v3/GSAP/gsap.matchMedia()).
+
+SEO güncellemesi: Hizmet kataloğu, Organization/WebSite/WebPage/Service grafiği, görsel sitemap ve soru-cevap içeriği eklendi. Paketleme komutu SEO denetimi geçmezse durur. Ayrıntılar `docs/SEO.md` dosyasındadır.

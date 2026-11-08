@@ -36,6 +36,16 @@
 .equipment-image-frame .photo-mark,.equipment-image-frame .image-corner{z-index:2}
 @media(prefers-reduced-motion:reduce){.equipment-image{transition:none;transform:none}}
 
+.faq-group{margin-top:65px;padding-top:35px;border-top:1px solid #bfc0b7}
+.faq-group>h3{font-size:clamp(30px,3vw,42px);margin-bottom:24px}
+.faq-item{border-bottom:1px solid #bfc0b7}
+.faq-item summary{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:21px;font-size:14px;font-weight:600;line-height:1.7;cursor:pointer;list-style:none}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:after{content:'+';font-size:23px;font-weight:400;flex:none}
+.faq-item[open] summary:after{content:'−'}
+.faq-item>p{max-width:780px;padding-bottom:24px;color:#5d645c;font-size:13px;line-height:1.9}
+@media(max-width:767px){.faq-group{margin-top:42px;padding-top:28px}.faq-item summary{font-size:12px;gap:20px}.faq-item>p{font-size:12px}}
+
 /* Three opening scenes share one pinned stage when motion is available. */
 .hero{min-height:calc(100svh - var(--header))}
 .hero-scene{position:relative;min-height:calc(100svh - var(--header));isolation:isolate;overflow:hidden;background:var(--ink)}

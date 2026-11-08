@@ -8,7 +8,7 @@ const html = await readFile(path.join(root, 'index.html'), 'utf8');
 const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
 assert.equal(ids.length, new Set(ids).size, 'Duplicate element IDs');
 for (const match of html.matchAll(/(?:href|src)="([^"#]+)"/g)) {
-  if (/^(https?:|tel:|data:)/.test(match[1])) continue;
+  if (/^(https?:|tel:|mailto:|data:)/.test(match[1])) continue;
   await access(path.join(root, match[1]));
 }
 for (const match of html.matchAll(/href="#([^"]+)"/g)) {

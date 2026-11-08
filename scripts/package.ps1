@@ -13,6 +13,8 @@ try {
     if ($LASTEXITCODE -ne 0) { throw 'Build failed.' }
     & node scripts/check.mjs
     if ($LASTEXITCODE -ne 0) { throw 'Source checks failed.' }
+    & node scripts/audit-seo.mjs
+    if ($LASTEXITCODE -ne 0) { throw 'SEO checks failed.' }
     $artifactDirectory = Join-Path $projectRoot 'artifacts'
     New-Item -ItemType Directory -Path $artifactDirectory -Force | Out-Null
     $archivePath = Join-Path $artifactDirectory "pusat-vinc-$mode.zip"

@@ -1,0 +1,56 @@
+{
+  "auditedAt": "2026-11-08T10:53:24.989Z",
+  "mode": "preview",
+  "siteUrl": null,
+  "passed": true,
+  "checks": [
+    {
+      "name": "Turkish document language",
+      "passed": true
+    },
+    {
+      "name": "Descriptive title",
+      "passed": true
+    },
+    {
+      "name": "Meta description",
+      "passed": true
+    },
+    {
+      "name": "One primary heading",
+      "passed": true
+    },
+    {
+      "name": "Image alternative descriptions",
+      "passed": true
+    },
+    {
+      "name": "Service content in delivered HTML",
+      "passed": true
+    },
+    {
+      "name": "Business phone link",
+      "passed": true
+    },
+    {
+      "name": "No placeholder navigation",
+      "passed": true
+    },
+    {
+      "name": "Parseable JSON-LD",
+      "passed": true
+    },
+    {
+      "name": "Preview is not indexable",
+      "passed": true
+    },
+    {
+      "name": "Preview has no unconfirmed canonical",
+      "passed": true
+    },
+    {
+      "name": "Preview sitemap has no production URL",
+      "passed": true
+    }
+  ]
+}

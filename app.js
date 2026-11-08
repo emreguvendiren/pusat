@@ -88,6 +88,9 @@ if ('IntersectionObserver' in window) {
 const { gsap, ScrollTrigger } = window;
 if (gsap && ScrollTrigger) {
   gsap.registerPlugin(ScrollTrigger);
+  document.querySelectorAll('details').forEach(details => {
+    details.addEventListener('toggle', () => ScrollTrigger.refresh(true));
+  });
   const media = gsap.matchMedia();
   const pictures = [...document.querySelectorAll('.equipment-image')];
   const chapters = [...document.querySelectorAll('.equipment-chapter')];

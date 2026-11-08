@@ -1,0 +1,87 @@
+{
+  "mode": "production",
+  "siteUrl": "https://www.pusatvinc.com",
+  "passed": true,
+  "checks": [
+    {
+      "name": "Turkish document language",
+      "passed": true
+    },
+    {
+      "name": "Descriptive title",
+      "passed": true
+    },
+    {
+      "name": "Meta description",
+      "passed": true
+    },
+    {
+      "name": "One primary heading",
+      "passed": true
+    },
+    {
+      "name": "Image alternative descriptions",
+      "passed": true
+    },
+    {
+      "name": "Service content in delivered HTML",
+      "passed": true
+    },
+    {
+      "name": "Business phone link",
+      "passed": true
+    },
+    {
+      "name": "No placeholder navigation",
+      "passed": true
+    },
+    {
+      "name": "Parseable JSON-LD",
+      "passed": true
+    },
+    {
+      "name": "Production is indexable",
+      "passed": true
+    },
+    {
+      "name": "Canonical matches release domain",
+      "passed": true
+    },
+    {
+      "name": "Robots allows crawling",
+      "passed": true
+    },
+    {
+      "name": "Robots references the sitemap",
+      "passed": true
+    },
+    {
+      "name": "Sitemap uses canonical homepage",
+      "passed": true
+    },
+    {
+      "name": "Sitemap includes original work photographs",
+      "passed": true
+    },
+    {
+      "name": "Absolute social image",
+      "passed": true
+    },
+    {
+      "name": "Business facts match verified content",
+      "passed": true
+    },
+    {
+      "name": "Service links to its provider",
+      "passed": true
+    },
+    {
+      "name": "Page links to website and service",
+      "passed": true
+    },
+    {
+      "name": "Schema service catalog matches visible content",
+      "passed": true
+    }
+  ]
+}

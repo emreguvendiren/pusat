@@ -68,4 +68,4 @@ node scripts/serve.mjs --qa
 
 Bu ölçümler ağ/CPU kısıtlaması olmadan localhost üzerinde alınır. Lighthouse puanı veya gerçek ziyaretçi performansı değildir.
 
-Şema referansı: [Schema.org LocalBusiness](https://schema.org/LocalBusiness).
+Şema referansı: [Google Organization](https://developers.google.com/search/docs/appearance/structured-data/organization). Güncel SEO notları `docs/SEO.md` içindedir.

@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { 'colors': { 'surface-container-high': '#252a31', 'primary-fixed-dim': '#ffba45', 'surface-tint': '#ffba45', 'surface-dim': '#0f141a', 'surface-container-highest': '#30353c', 'secondary-fixed': '#dbe3ed', 'outline-variant': '#514535', 'on-secondary-container': '#b1b9c3', 'background': '#0f141a', 'tertiary-fixed': '#e3e2df', 'secondary-fixed-dim': '#bfc7d1', 'on-error': '#690005', 'primary': '#ffbd51', 'primary-fixed': '#ffddb0', 'secondary': '#bfc7d1', 'on-tertiary-fixed-variant': '#464744', 'on-primary': '#442c00', 'outline': '#9e8e7b', 'tertiary-fixed-dim': '#c7c6c3', 'on-primary-fixed-variant': '#614000', 'error-container': '#93000a', 'inverse-surface': '#dee3eb', 'surface-container': '#1b2026', 'surface-bright': '#353a40', 'tertiary': '#cac9c5', 'surface-container-low': '#171c22', 'tertiary-container': '#aeaeaa', 'primary-container': '#e3a12b', 'on-background': '#dee3eb', 'on-secondary': '#293139', 'on-primary-fixed': '#281800', 'on-error-container': '#ffdad6', 'surface-container-lowest': '#0a0f14', 'error': '#ffb4ab', 'secondary-container': '#424a52', 'on-secondary-fixed-variant': '#404850', 'on-surface-variant': '#d5c4af', 'on-primary-container': '#5a3b00', 'inverse-primary': '#805600', 'on-surface': '#dee3eb', 'on-tertiary-container': '#41423f', 'inverse-on-surface': '#2c3137', 'surface-variant': '#30353c', 'on-tertiary-fixed': '#1b1c1a', 'on-secondary-fixed': '#151c24', 'on-tertiary': '#30312e', 'surface': '#0f141a' }, 'borderRadius': { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, 'spacing': { 'space-lg': '1.75rem', 'space-xl': '3rem', 'space-sm': '0.5rem', 'margin-lg': '4rem', 'space-md': '1rem', 'gutter': '1.5rem', 'gutter-lg': '2.5rem', 'space-xs': '0.25rem', 'space-2xl': '5rem', 'margin': '2rem' }, 'fontFamily': { 'display-hero': ['Space Grotesk'], 'headline-lg-mobile': ['Space Grotesk'], 'headline-lg': ['Space Grotesk'], 'body-lg': ['Hanken Grotesk'], 'headline-xl-mobile': ['Space Grotesk'], 'headline-md': ['Space Grotesk'], 'label-caps': ['JetBrains Mono'], 'code-spec': ['JetBrains Mono'], 'metric-monumental': ['Space Grotesk'], 'body-md': ['Hanken Grotesk'], 'headline-xl': ['Space Grotesk'], 'display-hero-mobile': ['Space Grotesk'], 'body-sm': ['Hanken Grotesk'], 'metric-monumental-mobile': ['Space Grotesk'] }, 'fontSize': { 'display-hero': ['84px', { 'lineHeight': '88px', 'letterSpacing': '-0.04em', 'fontWeight': '700' }], 'headline-lg-mobile': ['26px', { 'lineHeight': '32px', 'letterSpacing': '-0.01em', 'fontWeight': '500' }], 'headline-lg': ['36px', { 'lineHeight': '42px', 'letterSpacing': '-0.02em', 'fontWeight': '500' }], 'body-lg': ['18px', { 'lineHeight': '28px', 'letterSpacing': '0', 'fontWeight': '400' }], 'headline-xl-mobile': ['32px', { 'lineHeight': '36px', 'letterSpacing': '-0.02em', 'fontWeight': '600' }], 'headline-md': ['24px', { 'lineHeight': '30px', 'letterSpacing': '-0.01em', 'fontWeight': '500' }], 'label-caps': ['11px', { 'lineHeight': '16px', 'letterSpacing': '0.18em', 'fontWeight': '500' }], 'code-spec': ['12px', { 'lineHeight': '18px', 'letterSpacing': '0.04em', 'fontWeight': '400' }], 'metric-monumental': ['96px', { 'lineHeight': '96px', 'letterSpacing': '-0.05em', 'fontWeight': '700' }], 'body-md': ['15px', { 'lineHeight': '24px', 'letterSpacing': '0.01em', 'fontWeight': '400' }], 'headline-xl': ['56px', { 'lineHeight': '60px', 'letterSpacing': '-0.03em', 'fontWeight': '600' }], 'display-hero-mobile': ['42px', { 'lineHeight': '46px', 'letterSpacing': '-0.03em', 'fontWeight': '700' }], 'body-sm': ['13px', { 'lineHeight': '20px', 'letterSpacing': '0.01em', 'fontWeight': '400' }], 'metric-monumental-mobile': ['52px', { 'lineHeight': '52px', 'letterSpacing': '-0.03em', 'fontWeight': '700' }] } } } };</script></head><body class="bg-background text-on-surface font-body-md text-body-md min-h-screen selection:bg-primary selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-dim/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="h-20 w-full px-gutter-lg flex items-center justify-between"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm tracking-tighter" data-path="anasayfa" href="#"><img alt="Pusat Vinç &amp; Platform Logo" class="h-10 w-auto object-contain bg-white rounded p-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0zgr_j3BZ279h3fHtYjIrcvJxmVU5M5nOCztZIUGbTHOFBcmiuK2zfmPELwShmmJ5DTzCSV-I4leU5B0hiQhsvZ0gOyNjCojH0fbvAul2UKeCCdImud7ohBM32gePsnBCCNdfeqMwKXR0zG2HVNq-yhoXi8i9lgWtEooymrHf71VFOmvWR2eUCmGXkHAiCx8p0dANgwWYY3qNsFf243eQsxVWOaI-x_00UzLg_q70WRqDjBfWBdaJN6pflWYr4LtHbVg"/><div class="flex flex-col"><div class="flex items-baseline gap-1 leading-none"><span class="font-headline-md text-headline-md font-bold text-on-surface uppercase">PUSAT</span><span class="font-headline-md text-headline-md font-bold text-primary uppercase">VİNÇ</span></div><span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest hidden sm:inline-block">ANKARA // HYD-CRANE</span></div></a><div class="hidden xl:flex items-center gap-space-xs pl-space-md font-code-spec text-code-spec text-on-surface-variant"><span class="w-1.5 h-1.5 bg-primary"></span><span>EN 13000 SERTİFİKALI FİLO</span></div></div><nav class="hidden lg:flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><a class="px-space-md py-space-xs font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="hizmetler" href="#">HİZMETLER</a><a class="px-space-md py-space-xs font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="ekipman" href="#">EKİPMAN</a><a class="px-space-md py-space-xs font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="galeri" href="#">GALERİ</a><a class="px-space-md py-space-xs font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="neden-biz" href="#">NEDEN BİZ</a><a class="px-space-md py-space-xs font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="iletisim" href="#">İLETİŞİM</a></nav><div class="flex items-center gap-space-md"><div class="hidden md:flex flex-col text-right font-code-spec text-code-spec"><span class="text-on-surface-variant text-[10px] uppercase tracking-wider">7/24 OPERASYON MERKEZİ</span><a class="text-primary hover:text-primary-fixed transition-colors font-medium" href="tel:05425145338">0542 514 53 38</a></div><a class="hidden sm:inline-flex items-center gap-space-xs bg-primary text-on-primary px-space-md py-space-xs font-headline-md text-[13px] tracking-wider uppercase font-semibold hover:bg-surface-bright hover:text-on-surface transition-colors" href="https://wa.me/905425145338"><span>WHATSAPP TALEP</span></a><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida/AEtjO1Uw4wAUdxoSdxyZIqauw5z7cjD66lqS6WMkFJBqpkRkAUn-Ynqh3AwxlMtzfy4ecy7FaflL63wkMtTG0p-rALn7E27zGNqJvfYWj5uSQQe4h0lV3IM-229K6LEnEGb3OQxArtdjH9R4UsxJsk9HRTTWa5OnlWSCI1haPDihPVfQvbZelTNuFqG5yab8WDHCtJjlvV6pCzg3aC-NuAhU3U8ohcrMmR8-bJ-h2EGFKitQlkFZRcwg5gKQ7sDu6MB8va3OK_FlTgx5NWE"/></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full text-on-surface bg-background selection:bg-primary selection:text-on-primary">
+<!-- ================= SECTION 01: CINEMATIC HERO ================= -->
+<section class="relative w-full min-h-[92vh] flex flex-col justify-between p-gutter md:p-gutter-lg overflow-hidden bg-surface-container-lowest">
+<!-- Hero Photography Layer -->
+<div class="absolute inset-0 z-0">
+<img alt="Pusat Vinç Ankara Ağır Yük Kaldırma" class="w-full h-full object-cover object-center filter brightness-[0.42] contrast-[1.18] scale-[1.02] transition-transform duration-1000 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfqsPYH5uZlQ9ZXqdBc59OKApK0ypiTTTppQREoM_hathwZQaRrzIORHbncpp6zdxWC0ktspNCY8mtT-jFpnrNHPEtOaGOMjydNvrfYgRAZQ9g2gWVui3xqj8ZakBxMaFt1b3W8BXjhAg2Zix-mShBT_bd79B1EWi0ln7wiPbqFTOuGElpb8kSGQrixwZeOVhSGxowAWldACg5LaR_-7AAGrpzXaK3FYvxeGtSGT7Kw2S1qTZEu9bazd-ZaJAURTW3Es4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-surface-dim/40 to-surface-dim/70"></div>
+<div class="absolute inset-0 bg-[radial-gradient(#ffba45_1px,transparent_1px)] [background-size:32px_32px] opacity-10"></div>
+</div>
+<!-- Architectural Top Coordinate Bar -->
+<div class="relative z-10 w-full flex flex-wrap items-center justify-between gap-y-space-sm border-b border-outline-variant/30 pb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="inline-block w-2.5 h-2.5 bg-primary animate-pulse"></span>
+<span class="font-label-caps text-label-caps tracking-widest text-primary uppercase">[ ANKARA // OPERASYONEL HİDROLİK VİNÇ SİSTEMLERİ ]</span>
+</div>
+<div class="flex items-center gap-space-lg font-code-spec text-code-spec text-on-surface-variant">
+<span>REF: PV-ANK-06</span>
+<span class="hidden md:inline">ZEMİN STABİLİZASYONU: AKTİF</span>
+<span class="text-primary font-semibold">7/24 SAHA İNTİKALİ</span>
+</div>
+</div>
+<!-- Monumental Headline & Narrative Content -->
+<div class="relative z-10 my-auto py-space-xl max-w-6xl">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 bg-surface-container-high/80 border border-outline-variant/40 mb-space-md">
+<span class="font-code-spec text-[11px] text-primary tracking-wider uppercase">MERCEDES-BENZ KAMYON ÜZERİ TELESKOPİK</span>
+</div>
+<h1 class="font-display-hero text-headline-xl md:text-display-hero uppercase tracking-tighter text-on-surface leading-[0.92] mb-space-md">
+        GÜCÜ DOĞRU <br class="hidden sm:inline"/>
+<span class="text-primary font-black">NOKTAYA</span> TAŞIRIZ.
+      </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl font-normal leading-relaxed mb-space-xl">
+        Pusat Vinç ile Ankara ve çevresinde endüstriyel yük kaldırma, makine montajı, şantiye transferleri ve milimetrik yerleştirme operasyonları için tek merkezden mühendislik güvenliği.
+      </p>
+<!-- Action Group -->
+<div class="flex flex-wrap items-center gap-space-md">
+<a class="px-space-xl py-space-md bg-primary text-on-primary font-headline-md text-body-md font-bold uppercase tracking-wider hover:bg-on-surface hover:text-surface-dim transition-all duration-200 flex items-center gap-space-sm shadow-xl" href="#iletisim">
+<span>TEKLİF AL</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</a>
+<a class="px-space-xl py-space-md border border-outline hover:border-primary text-on-surface hover:text-primary font-headline-md text-body-md font-medium uppercase tracking-wider transition-all duration-200 bg-surface-dim/60 backdrop-blur-sm" href="#vitrin">
+<span>HİZMETLERİ KEŞFET</span>
+</a>
+</div>
+</div>
+<!-- Bottom Technical Specs Deck -->
+<div class="relative z-10 w-full pt-space-md border-t border-outline-variant/30 grid grid-cols-1 md:grid-cols-4 gap-space-md font-code-spec text-code-spec">
+<div class="flex flex-col">
+<span class="text-on-surface-variant text-[10px] uppercase">EKİPMAN SINIFI</span>
+<span class="text-on-surface font-semibold">Teleskopik Kamyon Üstü Vinç</span>
+</div>
+<div class="flex flex-col">
+<span class="text-on-surface-variant text-[10px] uppercase">ŞASİ &amp; GÜÇ</span>
+<span class="text-on-surface font-semibold">Mercedes-Benz Ağır Hizmet Serisi</span>
+</div>
+<div class="flex flex-col">
+<span class="text-on-surface-variant text-[10px] uppercase">BOM YAPISI</span>
+<span class="text-on-surface font-semibold">Çok Kademeli Hidrolik Uzatma</span>
+</div>
+<div class="flex items-center justify-start md:justify-end gap-space-xs text-primary">
+<span class="material-symbols-outlined text-base animate-bounce">south</span>
+<span class="tracking-widest uppercase text-[11px]">SİSTEMİ İNCELE</span>
+</div>
+</div>
+</section>
+<!-- ================= SECTION 02: SCROLL-DRIVEN CRANE SHOWCASE ================= -->
+<section class="w-full py-space-2xl px-gutter md:px-gutter-lg bg-surface-container-low border-b border-outline-variant/20" id="vitrin">
+<div class="max-w-7xl mx-auto">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<div class="flex items-center gap-space-xs font-label-caps text-label-caps text-primary tracking-widest uppercase mb-space-xs">
+<span class="w-2 h-0.5 bg-primary"></span>
+<span>01 // DİNAMİK TEKNİK VİTRİN</span>
+</div>
+<h2 class="font-headline-xl text-headline-lg md:text-headline-xl font-bold uppercase tracking-tight text-on-surface">
+            OPERASYONEL KARAKTER
+          </h2>
+</div>
+<p class="font-code-spec text-code-spec text-on-surface-variant max-w-md">
+          Mercedes-Benz şasimiz ve sarı-siyah hidrolik teleskopik bom ünitemizin Ankara genelindeki gerçek şantiye performans metrikleri.
+        </p>
+</div>
+<!-- Interactive Multi-State Visualizer -->
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-space-md bg-surface-container-lowest border border-outline-variant/30 p-space-md lg:p-space-lg relative">
+<!-- Interactive Controls (Left Column) -->
+<div class="lg:col-span-4 flex flex-col justify-between gap-space-md">
+<div class="space-y-space-xs" id="state-buttons">
+<!-- Tab 01 -->
+<button class="state-btn active w-full text-left p-space-md border border-primary/80 bg-surface-container transition-all group relative overflow-hidden" data-idx="0" onclick="setCraneState(0)">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-caps text-label-caps tracking-widest text-primary uppercase font-bold">[ 01 / GÜÇ ]</span>
+<span class="font-code-spec text-[11px] text-on-surface-variant">AĞIR KALDIRMA</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface group-hover:text-primary transition-colors">Silo &amp; Tank Tahliyesi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">Ağır çelik silolar ve depolama tanklarının derin temel çukurlarına güvenle indirilmesi.</p>
+</button>
+<!-- Tab 02 -->
+<button class="state-btn w-full text-left p-space-md border border-outline-variant/30 hover:border-outline bg-surface-dim transition-all group relative overflow-hidden" data-idx="1" onclick="setCraneState(1)">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-caps text-label-caps tracking-widest text-on-surface-variant uppercase font-bold">[ 02 / KONTROL ]</span>
+<span class="font-code-spec text-[11px] text-on-surface-variant">HİDROLİK DENGE</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface group-hover:text-primary transition-colors">Yanal Rijitlik</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">Bağımsız hidrolik payandalar ile engebeli dolgu arazide kusursuz gövde stabilizasyonu.</p>
+</button>
+<!-- Tab 03 -->
+<button class="state-btn w-full text-left p-space-md border border-outline-variant/30 hover:border-outline bg-surface-dim transition-all group relative overflow-hidden" data-idx="2" onclick="setCraneState(2)">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-caps text-label-caps tracking-widest text-on-surface-variant uppercase font-bold">[ 03 / ERİŞİM ]</span>
+<span class="font-code-spec text-[11px] text-on-surface-variant">TELESKOPİK MENZİL</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface group-hover:text-primary transition-colors">Yüksek İrtifa Bomu</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">Dar açıdan başlayan çok kademeli siyah bom açılımı ile geniş operasyon yarıçapı.</p>
+</button>
+<!-- Tab 04 -->
+<button class="state-btn w-full text-left p-space-md border border-outline-variant/30 hover:border-outline bg-surface-dim transition-all group relative overflow-hidden" data-idx="3" onclick="setCraneState(3)">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-caps text-label-caps tracking-widest text-on-surface-variant uppercase font-bold">[ 04 / ÇÖZÜM ]</span>
+<span class="font-code-spec text-[11px] text-on-surface-variant">ŞANTİYE SAHASI</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface group-hover:text-primary transition-colors">Hassas Yapı Montajı</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">Konut projelerinde çatı, çelik konstrüksiyon ve prekast elemanların milimetrik konumu.</p>
+</button>
+</div>
+<!-- Live Engineering Readout Plate -->
+<div class="p-space-md bg-surface-container-high border border-outline-variant/30">
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-space-xs mb-space-xs">
+<span class="font-label-caps text-[10px] text-primary uppercase">TELEMETRİ ÖZETİ</span>
+<span class="font-code-spec text-[10px] text-on-surface-variant">KONTROL ÜNİTESİ AKTİF</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs font-code-spec text-code-spec">
+<div><span class="text-on-surface-variant text-[11px]">ŞASİ:</span> Mercedes-Benz</div>
+<div><span class="text-on-surface-variant text-[11px]">ŞANZIMAN:</span> Ağır Hizmet</div>
+<div><span class="text-on-surface-variant text-[11px]">BOM TİPİ:</span> Teleskopik</div>
+<div><span class="text-on-surface-variant text-[11px]">HALAT:</span> Yüksek Mukavemet</div>
+</div>
+</div>
+</div>
+<!-- Stage Screen (Right Column) -->
+<div class="lg:col-span-8 flex flex-col justify-between relative min-h-[440px] md:min-h-[520px] bg-surface-dim overflow-hidden border border-outline-variant/20">
+<!-- Image Canvas with Overlay Indicators -->
+<div class="relative w-full h-full flex-1 min-h-[380px] overflow-hidden">
+<img alt="Pusat Vinç Teleskopik Bom Operasyonu" class="w-full h-full object-cover transition-opacity duration-500 ease-in-out" id="showcase-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfqsPYH5uZlQ9ZXqdBc59OKApK0ypiTTTppQREoM_hathwZQaRrzIORHbncpp6zdxWC0ktspNCY8mtT-jFpnrNHPEtOaGOMjydNvrfYgRAZQ9g2gWVui3xqj8ZakBxMaFt1b3W8BXjhAg2Zix-mShBT_bd79B1EWi0ln7wiPbqFTOuGElpb8kSGQrixwZeOVhSGxowAWldACg5LaR_-7AAGrpzXaK3FYvxeGtSGT7Kw2S1qTZEu9bazd-ZaJAURTW3Es4"/>
+<!-- Graphic Blueprint Watermark Grid -->
+<div class="absolute inset-0 pointer-events-none border border-primary/20 m-space-md flex flex-col justify-between p-space-sm">
+<div class="flex justify-between items-start">
+<span class="font-code-spec text-[11px] text-primary bg-surface-dim/80 px-1 border border-primary/30">PUSAT-CRANE-SYS // VER.24</span>
+<span class="font-code-spec text-[11px] text-on-surface bg-surface-dim/80 px-2 py-0.5 border border-outline" id="showcase-badge">DURUM: 01_YÜK_KALDIRMA</span>
+</div>
+<div class="flex justify-between items-end">
+<div class="font-code-spec text-[10px] text-on-surface-variant bg-surface-dim/80 p-1">
+                  LAT: 39.9609° N | LON: 32.8540° E<br/>
+                  ANKARA MERKEZLİ OPERASYON
+                </div>
+<div class="w-8 h-8 border-r-2 border-b-2 border-primary"></div>
+</div>
+</div>
+<!-- Dynamic Annotation Callout -->
+<div class="absolute top-1/4 right-8 max-w-xs bg-surface-dim/90 backdrop-blur-md p-space-md border-l-2 border-primary hidden md:block transition-all duration-300 shadow-2xl" id="showcase-callout">
+<div class="font-label-caps text-[10px] text-primary uppercase">[ SAHA TANK MONTAJI ]</div>
+<div class="font-headline-md text-body-md font-bold text-on-surface mt-1">Hassas Bağlantı Noktaları</div>
+<p class="font-code-spec text-code-spec text-on-surface-variant mt-1">Ekskavatör ve hidrolik bom koordinasyonu ile çift noktalı tandem yerleşim güvenliği.</p>
+</div>
+</div>
+<!-- Bottom Telemetry Ribbon -->
+<div class="w-full bg-surface-container-highest px-space-md py-space-xs flex flex-wrap items-center justify-between border-t border-outline-variant/40 font-code-spec text-[11px] text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<span class="text-on-surface flex items-center gap-1"><span class="w-1.5 h-1.5 bg-primary"></span> AKTİF TELEMETRİ GÖRÜNÜMÜ</span>
+<span class="text-primary font-semibold" id="state-metric">GÜVENLİ AÇI YÖNETİMİ</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span>SİSTEM KODU:</span>
+<span class="text-on-surface">PV-TC-01-ANK</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= SECTION 03: 02 / HİZMETLERİMİZ ================= -->
+<section class="w-full py-space-2xl px-gutter md:px-gutter-lg bg-background" id="hizmetler">
+<div class="max-w-7xl mx-auto">
+<!-- Section Title -->
+<div class="border-b border-outline-variant/30 pb-space-lg mb-space-xl">
+<div class="flex items-center gap-space-xs font-label-caps text-label-caps text-primary tracking-widest uppercase mb-space-xs">
+<span>02 // OPERASYON ALANLARI</span>
+</div>
+<h2 class="font-headline-xl text-headline-lg md:text-headline-xl font-bold uppercase tracking-tight text-on-surface">
+          YÜKÜNÜZ NE OLURSA OLSUN, <br/>
+<span class="text-primary font-black">ÇÖZÜM ODAKLIYIZ.</span>
+</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mt-space-sm font-normal">
+          Ankara sanayisi, altyapı projeleri ve inşaat sahalarında uzmanlaşmış tekil kamyon üzeri hidrolik teleskopik vinç gücümüzle eksiksiz saha çözümleri.
+        </p>
+</div>
+<!-- Architectural Tectonic Row List -->
+<div class="w-full border-t border-outline-variant/30 divide-y divide-outline-variant/20">
+<!-- Service Row 01 -->
+<div class="service-row group py-space-lg transition-all duration-300 hover:bg-surface-container-low px-space-md">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center">
+<div class="md:col-span-2 font-code-spec text-headline-md font-bold text-on-surface-variant group-hover:text-primary transition-colors">
+              01 //
+            </div>
+<div class="md:col-span-4">
+<h3 class="font-headline-md text-headline-md font-bold uppercase text-on-surface group-hover:text-primary transition-colors">
+                Vinç Kiralama Hizmetleri
+              </h3>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider block mt-1">SAATLİK // GÜNLÜK // PROJE BAZLI</span>
+</div>
+<div class="md:col-span-5 font-body-md text-body-md text-on-surface-variant">
+              Sertifikalı ve tecrübeli operatörümüz eşliğinde, Ankara merkez ve tüm ilçelerinde ihtiyacınız olan süre boyunca esnek, güvenilir ve tam donanımlı vinç kiralama çözümü.
+            </div>
+<div class="md:col-span-1 flex justify-end">
+<div class="w-10 h-10 border border-outline-variant/40 group-hover:border-primary group-hover:bg-primary flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-on-surface group-hover:text-on-primary text-xl">arrow_outward</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Service Row 02 -->
+<div class="service-row group py-space-lg transition-all duration-300 hover:bg-surface-container-low px-space-md">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center">
+<div class="md:col-span-2 font-code-spec text-headline-md font-bold text-on-surface-variant group-hover:text-primary transition-colors">
+              02 //
+            </div>
+<div class="md:col-span-4">
+<h3 class="font-headline-md text-headline-md font-bold uppercase text-on-surface group-hover:text-primary transition-colors">
+                Yük Kaldırma &amp; Yerleştirme
+              </h3>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider block mt-1">HASSAS MİMETRİK KONUMLANDIRMA</span>
+</div>
+<div class="md:col-span-5 font-body-md text-body-md text-on-surface-variant">
+              Dar fabrika hollerinde, trafo merkezlerinde ve şantiye zeminlerinde ağır kütlelerin milimetrik emniyet payı ve çift sapan koordinasyonu ile hedef noktaya kondurulması.
+            </div>
+<div class="md:col-span-1 flex justify-end">
+<div class="w-10 h-10 border border-outline-variant/40 group-hover:border-primary group-hover:bg-primary flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-on-surface group-hover:text-on-primary text-xl">arrow_outward</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Service Row 03 -->
+<div class="service-row group py-space-lg transition-all duration-300 hover:bg-surface-container-low px-space-md">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center">
+<div class="md:col-span-2 font-code-spec text-headline-md font-bold text-on-surface-variant group-hover:text-primary transition-colors">
+              03 //
+            </div>
+<div class="md:col-span-4">
+<h3 class="font-headline-md text-headline-md font-bold uppercase text-on-surface group-hover:text-primary transition-colors">
+                Makine &amp; Ağır Parça Montajı
+              </h3>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider block mt-1">ENDÜSTRİYEL KAZAN // SİLO // PREKAST</span>
+</div>
+<div class="md:col-span-5 font-body-md text-body-md text-on-surface-variant">
+              OSTİM, İvedik ve Sincan sanayi bölgelerindeki fabrikalara CNC tezgahları, pres makineleri, buhar kazanları ve devasa depolama silolarının indirilip montaj desteğinin sağlanması.
+            </div>
+<div class="md:col-span-1 flex justify-end">
+<div class="w-10 h-10 border border-outline-variant/40 group-hover:border-primary group-hover:bg-primary flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-on-surface group-hover:text-on-primary text-xl">arrow_outward</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Service Row 04 -->
+<div class="service-row group py-space-lg transition-all duration-300 hover:bg-surface-container-low px-space-md">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center">
+<div class="md:col-span-2 font-code-spec text-headline-md font-bold text-on-surface-variant group-hover:text-primary transition-colors">
+              04 //
+            </div>
+<div class="md:col-span-4">
+<h3 class="font-headline-md text-headline-md font-bold uppercase text-on-surface group-hover:text-primary transition-colors">
+                İnşaat Şantiye Kaldırma İşleri
+              </h3>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider block mt-1">YÜKSEK İRTİFA ÇATI &amp; CEPHE ERİŞİMİ</span>
+</div>
+<div class="md:col-span-5 font-body-md text-body-md text-on-surface-variant">
+              Teleskopik bomun geniş açı kabiliyeti ile villa, konut ve sanayi inşaatlarında çatı kirişleri, demir bağları, cam paneller ve dış cephe iskelelerinin kaldırılması.
+            </div>
+<div class="md:col-span-1 flex justify-end">
+<div class="w-10 h-10 border border-outline-variant/40 group-hover:border-primary group-hover:bg-primary flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-on-surface group-hover:text-on-primary text-xl">arrow_outward</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Service Row 05 -->
+<div class="service-row group py-space-lg transition-all duration-300 hover:bg-surface-container-low px-space-md">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center">
+<div class="md:col-span-2 font-code-spec text-headline-md font-bold text-on-surface-variant group-hover:text-primary transition-colors">
+              05 //
+            </div>
+<div class="md:col-span-4">
+<h3 class="font-headline-md text-headline-md font-bold uppercase text-on-surface group-hover:text-primary transition-colors">
+                Endüstriyel Yükleme / Boşaltma
+              </h3>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider block mt-1">TIR &amp; DORSE AKTARMALARI</span>
+</div>
+<div class="md:col-span-5 font-body-md text-body-md text-on-surface-variant">
+              Lojistik merkezlerde ve depolarda tırlardan indirilecek ağır paletlerin, jeneratörlerin, trafoların ve inşaat konteynerlerinin emniyetle tahliyesi.
+            </div>
+<div class="md:col-span-1 flex justify-end">
+<div class="w-10 h-10 border border-outline-variant/40 group-hover:border-primary group-hover:bg-primary flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-on-surface group-hover:text-on-primary text-xl">arrow_outward</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= SECTION 04: SAHADA GÜÇ. HER HAREKETTE KONTROL ================= -->
+<section class="w-full py-space-2xl px-gutter md:px-gutter-lg bg-surface-container border-y border-outline-variant/20">
+<div class="max-w-7xl mx-auto">
+<!-- Headings -->
+<div class="mb-space-xl">
+<div class="font-label-caps text-label-caps text-primary tracking-widest uppercase mb-space-xs">
+          [ 03 // EKİPMAN MİMARİSİ ]
+        </div>
+<h2 class="font-headline-xl text-headline-lg md:text-headline-xl font-bold uppercase tracking-tight text-on-surface">
+          SAHADA GÜÇ. <span class="text-primary font-black">HER HAREKETTE KONTROL.</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-space-xs">
+          Filomuzun omurgası olan kamyon üzeri hidrolik vinç konfigürasyonu, esnek hareket alanı ve rijit zemin basma gücüyle en çetin arazi koşullarında dahi tam hakimiyet sağlar.
+        </p>
+</div>
+<!-- Blueprint Visual Anatomy Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Center Blueprint Image Deck -->
+<div class="lg:col-span-7 relative bg-surface-dim border border-outline-variant/40 p-space-sm overflow-hidden">
+<div class="relative w-full aspect-[16/10] overflow-hidden">
+<img alt="Pusat Vinç Fabrika İçi Ağır İmalat ve Çatı Konstrüksiyonu" class="w-full h-full object-cover filter contrast-[1.12]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNuU0tOraMYcyYrNrGbpy8eTszvwDzHM3rY3jPtscThCFMV0Z-GYuk0Ts6ZlexvcJsoG0-rVOrLYbdUghK_8yWlitcYjQ_VX8_CaCXWk2iE2aDM4C0ZPoG9cNRaggkVg-K_71Uo3u6f5LixQExK9ri5sW4EVUVefkYilLWJ3vje_1w0HjmenB1lQLSBfDr4BevQ0S8hiIKLwgrLbShLfzpgP09A2Fc_JI93vr1pk-R6yXs12Gt1IqfQl3zUwiZ3m2Bc4I"/>
+<div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+<!-- Callout Pin 1: Telescopic Boom -->
+<div class="absolute top-[28%] left-[45%] flex items-center gap-2 pointer-events-none">
+<span class="w-3 h-3 bg-primary rounded-full animate-ping absolute"></span>
+<span class="w-3 h-3 bg-primary rounded-full relative"></span>
+<div class="bg-surface-dim/95 border border-primary/50 text-[10px] font-code-spec px-2 py-1 text-on-surface uppercase">
+                BOM EKLEMİ // ÇOK KADEMELİ
+              </div>
+</div>
+<!-- Callout Pin 2: Rigging Points -->
+<div class="absolute top-[48%] right-[24%] flex items-center gap-2 pointer-events-none">
+<span class="w-3 h-3 bg-primary rounded-full relative"></span>
+<div class="bg-surface-dim/95 border border-primary/50 text-[10px] font-code-spec px-2 py-1 text-on-surface uppercase">
+                TANDEM SAPAN HİDROLİĞİ
+              </div>
+</div>
+<!-- Callout Pin 3: Outrigger Jack -->
+<div class="absolute bottom-[20%] left-[58%] flex items-center gap-2 pointer-events-none">
+<span class="w-3 h-3 bg-primary rounded-full relative"></span>
+<div class="bg-surface-dim/95 border border-primary/50 text-[10px] font-code-spec px-2 py-1 text-on-surface uppercase">
+                HİDROLİK DENGE PABUCU
+              </div>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low flex justify-between items-center font-code-spec text-[11px] text-on-surface-variant border-t border-outline-variant/30 mt-space-xs"><span>ŞASİ: MERCEDES-BENZ ÖZEL KABİN &amp; PUSAT VİNÇ</span><span class="text-primary font-bold">FABRİKA HOLÜ &amp; ÇELİK KONSTRÜKSİYON</span></div>
+</div>
+<!-- 4 Core Pillars (Right) -->
+<div class="lg:col-span-5 grid grid-cols-1 gap-space-md">
+<div class="p-space-md bg-surface-dim border-l-2 border-primary border-y border-r border-outline-variant/20 hover:border-primary transition-all">
+<div class="font-label-caps text-[10px] text-primary tracking-widest uppercase mb-1">01 / BOM MÜHENDİSLİĞİ</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mb-1">Hidrolik Teleskopik Bom</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Çok kademeli hidrolik piston uzantılarıyla hem yatayda engellerin aşılmasını hem de dik açılarda yüksek irtifa stabilitesini garanti eder.</p>
+</div>
+<div class="p-space-md bg-surface-dim border-l-2 border-outline border-y border-r border-outline-variant/20 hover:border-primary transition-all">
+<div class="font-label-caps text-[10px] text-primary tracking-widest uppercase mb-1">02 / ÇEVİK SEVKİYAT</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mb-1">Kamyon Üzeri Vinç Sistemi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ruhsatlı Mercedes-Benz kamyon şasisi sayesinde Ankara içi otoyol ve ara sokaklarda eskort gerekmeden saatinde intikal imkanı.</p>
+</div>
+<div class="p-space-md bg-surface-dim border-l-2 border-outline border-y border-r border-outline-variant/20 hover:border-primary transition-all">
+<div class="font-label-caps text-[10px] text-primary tracking-widest uppercase mb-1">03 / TEMEL SAĞLAMLIK</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mb-1">Hidrolik Denge Ayakları</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Geniş basma yüzeyli takoz destekli dört yönlü açılabilir dengeleme silindirleri, eğimli ve gevşek arazide kaymayı sıfırlar.</p>
+</div>
+<div class="p-space-md bg-surface-dim border-l-2 border-outline border-y border-r border-outline-variant/20 hover:border-primary transition-all">
+<div class="font-label-caps text-[10px] text-primary tracking-widest uppercase mb-1">04 / RİSK YÖNETİMİ</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mb-1">Hassas Konumlandırma</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Operatörün milimetrik yönlendirme kumandaları sayesinde en hassas yükler dahi vuruntu ve salınım olmadan yuvaya oturtulur.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= SECTION 05: 04 / SAHADAN KARELER ================= -->
+<section class="w-full py-space-2xl px-gutter md:px-gutter-lg bg-surface-container-lowest" id="galeri">
+<div class="max-w-7xl mx-auto">
+<!-- Section Title & Counter -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl border-b border-outline-variant/30 pb-space-md">
+<div>
+<div class="font-label-caps text-label-caps text-primary tracking-widest uppercase mb-space-xs">
+            04 // GERÇEK PROJE ARŞİVİ
+          </div>
+<h2 class="font-headline-xl text-headline-lg md:text-headline-xl font-bold uppercase tracking-tight text-on-surface">
+            SAHADAN KARELER
+          </h2>
+</div>
+<div class="font-code-spec text-code-spec text-on-surface-variant">
+          [ BELGELENMİŞ OPERASYONLAR: ANKARA SAHALARI ]
+        </div>
+</div>
+<!-- Editorial Asymmetric Mosaic -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md"><!-- Large Wide Hero Card: Tank & Silo Placement -->
+<div class="md:col-span-12 group relative bg-surface-dim border border-outline-variant/30 overflow-hidden">
+<div class="relative w-full aspect-[21/9] min-h-[300px] overflow-hidden">
+<img alt="Ankara Ağır Silo ve Tank İndirme Operasyonu" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfqsPYH5uZlQ9ZXqdBc59OKApK0ypiTTTppQREoM_hathwZQaRrzIORHbncpp6zdxWC0ktspNCY8mtT-jFpnrNHPEtOaGOMjydNvrfYgRAZQ9g2gWVui3xqj8ZakBxMaFt1b3W8BXjhAg2Zix-mShBT_bd79B1EWi0ln7wiPbqFTOuGElpb8kSGQrixwZeOVhSGxowAWldACg5LaR_-7AAGrpzXaK3FYvxeGtSGT7Kw2S1qTZEu9bazd-ZaJAURTW3Es4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4 font-code-spec text-[10px] bg-surface-dim/80 px-2 py-1 text-primary border border-primary/30 uppercase">
+      OPERASYON // SANAYİ TANK İNDİRME
+    </div>
+</div>
+<div class="p-space-md md:p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md bg-surface-container-low border-t border-outline-variant/20">
+<div>
+<span class="font-label-caps text-[10px] text-primary uppercase">[ PROJE 01 - SANAYİ TESİSİ ]</span>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">Endüstriyel Silo &amp; Tank Konumlandırma</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Ekskavatör ve Pusat Vinç çift kancalı koordinasyonuyla derin temel çukuruna sıfır toleransla tandem yerleşim.</p>
+</div>
+<div class="flex items-center gap-space-md font-code-spec text-[11px] text-on-surface-variant">
+<span>KONUM: OSTİM SANAYİ</span>
+<span class="text-primary font-bold">BAŞARIYLA TAMAMLANDI</span>
+</div>
+</div>
+</div>
+<!-- Card 02: Indoor Warehouse/Factory Hall Installation (IMAGE_2) -->
+<div class="md:col-span-6 group relative bg-surface-dim border border-outline-variant/30 overflow-hidden flex flex-col">
+<div class="relative w-full aspect-[4/5] overflow-hidden flex-1">
+<img alt="Kapalı Fabrika &amp; Depo İçi Ağır Yük ve Çelik Montajı" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNuU0tOraMYcyYrNrGbpy8eTszvwDzHM3rY3jPtscThCFMV0Z-GYuk0Ts6ZlexvcJsoG0-rVOrLYbdUghK_8yWlitcYjQ_VX8_CaCXWk2iE2aDM4C0ZPoG9cNRaggkVg-K_71Uo3u6f5LixQExK9ri5sW4EVUVefkYilLWJ3vje_1w0HjmenB1lQLSBfDr4BevQ0S8hiIKLwgrLbShLfzpgP09A2Fc_JI93vr1pk-R6yXs12Gt1IqfQl3zUwiZ3m2Bc4I"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4 font-code-spec text-[10px] bg-surface-dim/80 px-2 py-1 text-primary border border-primary/30 uppercase">
+      KAPALI TESİS // FABRİKA VE DEPO
+    </div>
+</div>
+<div class="p-space-md bg-surface-container-low border-t border-outline-variant/20">
+<span class="font-label-caps text-[10px] text-primary uppercase">[ PROJE 02 - ENDÜSTRİYEL İMALAT ]</span>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">Kapalı Tesis &amp; Tavan Kiriş Montajı</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Fabrika holü tavan makasları, çelik konstrüksiyon ve vinç raylarının kapalı sahada payandalarla güvenli montajı.</p>
+</div>
+</div>
+<!-- Card 03: Foundation High-Reach Vertical Boom (IMAGE_3) -->
+<div class="md:col-span-6 group relative bg-surface-dim border border-outline-variant/30 overflow-hidden flex flex-col">
+<div class="relative w-full aspect-[4/5] overflow-hidden flex-1">
+<img alt="Şantiye Temel Zemin Yüksek İrtifa Dikey Bom Operasyonu" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvBQdyPKQUGQBWZ8ES1g8L3uKijcXAV20Vvgi30foh03Moq3jCMj_jBmbyJsaXHVBb47UDRX41yjE9jXo5uNOgdpq791s9YVVbG-gKawVBRm1LdeHcq9X3xA7ZP4rsNTZkrtBWlAnYiWSp--HXHgrSiSeJZSCbK2jQawOvlmIIjPthXEhfztvswxou1wtpUZtbmyCNsRVgP1u3JP8NjHmrBFT8xNwU5_CjsqeEQvf1lz14GZWm2NJhPGNOxbsI_copZzA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4 font-code-spec text-[10px] bg-surface-dim/80 px-2 py-1 text-primary border border-primary/30 uppercase">
+      TEMEL İNŞAATI // DİKEY ERİŞİM
+    </div>
+</div>
+<div class="p-space-md bg-surface-container-low border-t border-outline-variant/20">
+<span class="font-label-caps text-[10px] text-primary uppercase">[ PROJE 03 - ŞANTİYE ALTYAPI ]</span>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">Temel Şantiye &amp; Yüksek İrtifa Bom</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Derin zemin donatı demirleri, kalıp blokları ve betonarme yapı elemanlarının dikey teleskopik açılımla taşınması.</p>
+</div>
+</div>
+<!-- Card 04: Hilltop High Altitude Boom Reach (IMAGE_7) -->
+<div class="md:col-span-6 group relative bg-surface-dim border border-outline-variant/30 overflow-hidden flex flex-col">
+<div class="relative w-full aspect-[16/10] overflow-hidden flex-1">
+<img alt="Pusat Vinç Açık Gökyüzü Yüksek İrtifa Bom Açılımı" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpTbS99VshRIZfyeZDnARkY0dgZ-nM23Kpy7D9w1q-QmCEB9ajd8gMMKeNsJWCLyMfY7K3AMb4nuli15ScTrcesbWeZjrYYjZylT0W-tKUhTvTk-ZR69bENXFU2lu5CYGIvW5ZDPy2gYVCsxlh33Hbq2yDsbDFGcumwtQiW8kZrzl0Mqn3EHV1H3NLBgnDop_7ESu67zg7GhkO0W2LFJxkU0MU9kPt-iowGqstYgEGZB7IXhr-CbeBr6n0wRdOi5HEeOM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4 font-code-spec text-[10px] bg-surface-dim/80 px-2 py-1 text-primary border border-primary/30 uppercase">
+      BOM AÇILIMI // ENGEBELİ ARAZİ
+    </div>
+</div>
+<div class="p-space-md bg-surface-container-low border-t border-outline-variant/20">
+<span class="font-label-caps text-[10px] text-primary uppercase">[ PROJE 04 - ARAZİ ERİŞİMİ ]</span>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">Yüksek İrtifa Bom Açılımı &amp; Saha İntikali</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Kırsal şantiye tepesinde stabilizasyon ayakları kurularak en uç noktaya kadar uzatılan teleskopik kollar.</p>
+</div>
+</div>
+<!-- Card 05: Villa / Housing Roof Operation (IMAGE_8) -->
+<div class="md:col-span-6 group relative bg-surface-dim border border-outline-variant/30 overflow-hidden flex flex-col">
+<div class="relative w-full aspect-[16/10] overflow-hidden flex-1">
+<img alt="Konut İnşaatı Şantiye Kaldırma Operasyonu" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0Qr-SPaukVtpFjXC2S5-JPvhAnlf0GuKe_g9ElTMeZRhh14xVt6igsoOgswuuCIOIz1NrXM4iBq5GsJBpaKjYCqXzv8IEp92Xl2iC9pakxPw_pnbiSwPMWmLJ8emU3fCdsOFJ7V3deTLyfd52lHtizf7WrK7Dc421QDXO-S1t1tB59VoaKgzmClUiDGZ7vHWl3Vz5jGwH6wRDsOy1ikD8pKOj1MUyM4OHb0EimPvggROiUQg7zgo_W4RnXZtKVE7bF3g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4 font-code-spec text-[10px] bg-surface-dim/80 px-2 py-1 text-primary border border-primary/30 uppercase">
+      YAPI SEKTÖRÜ // KONUT İNŞAATI
+    </div>
+</div>
+<div class="p-space-md bg-surface-container-low border-t border-outline-variant/20">
+<span class="font-label-caps text-[10px] text-primary uppercase">[ PROJE 05 - KONUT PROJESİ ]</span>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">Konut ve Şantiye Taşıma Operasyonu</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Lüks villa ve konut inşaatlarında çatı elemanlarının, iskelelerin ve paletli malzemelerin emniyetle vinçlenmesi.</p>
+</div>
+</div></div>
+</div>
+</section>
+<!-- ================= SECTION 06: İŞİN BAŞINDA. YÜKÜN ALTINDA. ================= -->
+<section class="w-full py-space-2xl px-gutter md:px-gutter-lg bg-surface-container-low border-y border-outline-variant/20">
+<div class="max-w-7xl mx-auto">
+<!-- Section Tagline -->
+<div class="max-w-3xl mb-space-2xl">
+<div class="font-label-caps text-label-caps text-primary tracking-widest uppercase mb-space-xs">
+          05 // ÇALIŞMA PRENSİBİMİZ
+        </div>
+<h2 class="font-headline-xl text-headline-lg md:text-headline-xl font-bold uppercase tracking-tight text-on-surface">
+          İŞİN BAŞINDA. <span class="text-primary font-black">YÜKÜN ALTINDA.</span>
+</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-sm font-normal">
+          Vinç hizmeti yalnızca bir makine çalıştırmak değil; can güvenliğini, ağır yatırımları ve şantiye zamanlamasını eksiksiz yönetmektir.
+        </p>
+</div>
+<!-- 4-Column Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="p-space-lg bg-surface-dim border border-outline-variant/30 flex flex-col justify-between">
+<div>
+<div class="font-code-spec text-headline-md font-bold text-primary mb-space-xs">01.</div>
+<h3 class="font-headline-md text-headline-md font-bold uppercase text-on-surface mb-space-xs">Doğru İş Planlaması</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Kaldırılacak yükün tonajı, bom açılma açısı ve zemin taşıma kapasitesi operasyon öncesinde titizlikle hesaplanır.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-outline-variant/20 font-label-caps text-[10px] text-on-surface-variant uppercase">
+            [ SIFIR HATA HEDEFİ ]
+          </div>
+</div>
+<div class="p-space-lg bg-surface-dim border border-outline-variant/30 flex flex-col justify-between">
+<div>
+<div class="font-code-spec text-headline-md font-bold text-primary mb-space-xs">02.</div>
+<h3 class="font-headline-md text-headline-md font-bold uppercase text-on-surface mb-space-xs">İşe Uygun Vinç Gücü</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Mercedes-Benz kamyon şasimizle dar cadde ve şantiye girişlerine takılmadan girer, hidrolik teleskopik bomumuzla gereken noktaya erişiriz.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-outline-variant/20 font-label-caps text-[10px] text-on-surface-variant uppercase">
+            [ ÇEVİK MANEVRA ]
+          </div>
+</div>
+<div class="p-space-lg bg-surface-dim border border-outline-variant/30 flex flex-col justify-between">
+<div>
+<div class="font-code-spec text-headline-md font-bold text-primary mb-space-xs">03.</div>
+<h3 class="font-headline-md text-headline-md font-bold uppercase text-on-surface mb-space-xs">Milimetrik Yerleşim</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Yükün kaldırılması kadar indirilmesi de bir zanaattır. Çelik ayaklara veya temel yuvalarına yükü sarsıntısız bırakırız.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-outline-variant/20 font-label-caps text-[10px] text-on-surface-variant uppercase">
+            [ HASSAS KONTROL ]
+          </div>
+</div>
+<div class="p-space-lg bg-surface-dim border border-outline-variant/30 flex flex-col justify-between">
+<div>
+<div class="font-code-spec text-headline-md font-bold text-primary mb-space-xs">04.</div>
+<h3 class="font-headline-md text-headline-md font-bold uppercase text-on-surface mb-space-xs">Açık &amp; Hızlı İletişim</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Aracı kurumlar olmadan doğrudan operatör ve saha yetkilisiyle görüşür, zaman kaybetmeden net fiyat ve süre teklifi alırsınız.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-outline-variant/20 font-label-caps text-[10px] text-on-surface-variant uppercase">
+            [ DOĞRUDAN TEMAS ]
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= SECTION 07: CONVERSION & CONTACT SECTION ================= -->
+<section class="w-full py-space-2xl px-gutter md:px-gutter-lg bg-surface-container-lowest" id="iletisim">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Left: Action Statement -->
+<div class="lg:col-span-6 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-xs font-label-caps text-label-caps text-primary tracking-widest uppercase mb-space-xs">
+<span class="w-2.5 h-2.5 bg-primary"></span>
+<span>06 // DOĞRUDAN BAĞLANTI</span>
+</div>
+<h2 class="font-headline-xl text-headline-lg md:text-headline-xl font-bold uppercase tracking-tight text-on-surface mb-space-md">
+              YÜKÜNÜZÜ <br/>
+<span class="text-primary font-black">BİRLİKTE KALDIRALIM.</span>
+</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant font-normal leading-relaxed mb-space-lg">
+              Projenizin detaylarını, yük tonajını ve çalışma konumunu paylaşın; kamyon üzeri teleskopik vinç çözümümüz için derhal teknik değerlendirme ve fiyat verelim.
+            </p>
+<!-- Direct Contact Buttons -->
+<div class="flex flex-col sm:flex-row gap-space-sm mb-space-xl">
+<a class="px-space-lg py-space-md bg-primary text-on-primary font-headline-md text-body-md font-bold uppercase tracking-wider hover:bg-on-surface hover:text-surface-dim transition-all flex items-center justify-center gap-space-xs shadow-xl" href="tel:05425145338"><span class="material-symbols-outlined text-lg">call</span><span>HEMEN ARA: 0542 514 53 38</span></a>
+<a class="px-space-lg py-space-md border border-primary text-primary hover:bg-primary hover:text-on-primary font-headline-md text-body-md font-semibold uppercase tracking-wider transition-all flex items-center justify-center gap-space-xs" href="https://wa.me/905425145338" target="_blank">
+<span class="material-symbols-outlined text-lg">chat</span>
+<span>WHATSAPP'TAN YAZ</span>
+</a>
+</div>
+</div>
+<!-- Technical Dispatch Box -->
+<div class="p-space-md bg-surface-container border border-outline-variant/30">
+<div class="font-label-caps text-[11px] text-primary uppercase mb-space-xs">[ HIZLI SAHA SEVKİYATI ]</div>
+<div class="font-code-spec text-code-spec text-on-surface-variant space-y-1">
+<div>ANKARA MERKEZ / OSTİM / İVEDİK / SİNCAN / KAHRAMANKAZAN / GÖLBAŞI</div>
+<div class="text-on-surface">Operasyon aracı: Mercedes-Benz Kamyon Üzeri Teleskopik Vinç</div>
+</div>
+</div>
+</div>
+<!-- Right: Fast Request Terminal -->
+<div class="lg:col-span-6 bg-surface-container-low border border-outline-variant/30 p-space-lg">
+<div class="border-b border-outline-variant/30 pb-space-sm mb-space-md flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-primary uppercase">[ HIZLI TEKLİF &amp; KEŞİF FORMU ]</span>
+<span class="font-code-spec text-[10px] text-on-surface-variant">SİSTEM HAZIR</span>
+</div>
+<form class="space-y-space-md" onsubmit="handleQuoteSubmit(event)">
+<div>
+<label class="block font-label-caps text-[11px] text-on-surface uppercase mb-1">HİZMET KATEGORİSİ</label>
+<select class="w-full bg-surface-dim border border-outline-variant/40 focus:border-primary text-on-surface font-code-spec text-code-spec px-space-md py-space-sm outline-none">
+<option>Yük Kaldırma ve Yerleştirme</option>
+<option>Makine / Silo / Tank Montajı</option>
+<option>Saatlik / Günlük Vinç Kiralama</option>
+<option>İnşaat Şantiye Yüksek İrtifa Kaldırma</option>
+<option>Tır / Konteyner Yükleme &amp; Tahliye</option>
+</select>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-caps text-[11px] text-on-surface uppercase mb-1">ŞANTİYE / İLÇE (ANKARA)</label>
+<input class="w-full bg-surface-dim border border-outline-variant/40 focus:border-primary text-on-surface font-code-spec text-code-spec px-space-md py-space-sm outline-none placeholder:text-on-surface-variant/40" placeholder="Örn: Ostim OSB, Kahramankazan..." required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-caps text-[11px] text-on-surface uppercase mb-1">İLETİŞİM NUMARANIZ</label>
+<input class="w-full bg-surface-dim border border-outline-variant/40 focus:border-primary text-on-surface font-code-spec text-code-spec px-space-md py-space-sm outline-none placeholder:text-on-surface-variant/40" placeholder="05XX XXX XX XX" required="" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block font-label-caps text-[11px] text-on-surface uppercase mb-1">YÜK VE OPERASYON DETAYLARI</label>
+<textarea class="w-full bg-surface-dim border border-outline-variant/40 focus:border-primary text-on-surface font-code-spec text-code-spec px-space-md py-space-sm outline-none placeholder:text-on-surface-variant/40" placeholder="Kaldırılacak malzeme cinsi, yaklaşık ağırlık veya montaj yüksekliği..." rows="3"></textarea>
+</div>
+<button class="w-full py-space-md bg-primary text-on-primary font-headline-md text-body-md font-bold uppercase tracking-wider hover:bg-on-surface hover:text-surface-dim transition-all flex items-center justify-center gap-space-xs" type="submit">
+<span>BİLGİLERİ GÖNDER // DÖNÜŞ İSTE</span>
+<span class="material-symbols-outlined text-lg">send</span>
+</button>
+<div class="hidden p-space-sm bg-primary/20 border border-primary text-primary font-code-spec text-center text-[12px]" id="form-feedback">
+              TALEBİNİZ ALINDI. EN KISA SÜREDE TELEFONLA DÖNÜŞ YAPILACAKTIR.
+            </div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Dynamic Crane State Controller Script -->
+<script>
+    const craneStates = [
+      {
+        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBBasHTBJQs165Z-gpWAU8dbhBHYjRm99FAra_zNHTNndz8kr-kcDpt1hfIGZeGvRKTe4Smgr1OKeROfBjz5WmWQHBSLLUT0dUKF2mtiLWCOYyKDaQ78RMKUHi8LPw25A8Wgm3ccCq0DHAKT-ipO1Ph0rBXfCG-W8lADMZqO0eXilDfZDHcv-_vJCz1kA3xcqym2f7UBUERHwUUqb7y4lL9a6lP_MujfbrIUWNKozfp8RAlg_wJufwMriIoYjYo-fCBCHo",
+        badge: "DURUM: 01_GÜÇ // TANK_MONTAJI",
+        metric: "GÜVENLİ AĞIR KALDIRMA AKTİF",
+        calloutTitle: "Hassas Bağlantı Noktaları",
+        calloutText: "Ekskavatör ve hidrolik bom koordinasyonu ile çift noktalı tandem yerleşim güvenliği.",
+        tag: "[ SAHA TANK MONTAJI ]"
+      },
+      {
+        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBBasHTBJQs165Z-gpWAU8dbhBHYjRm99FAra_zNHTNndz8kr-kcDpt1hfIGZeGvRKTe4Smgr1OKeROfBjz5WmWQHBSLLUT0dUKF2mtiLWCOYyKDaQ78RMKUHi8LPw25A8Wgm3ccCq0DHAKT-ipO1Ph0rBXfCG-W8lADMZqO0eXilDfZDHcv-_vJCz1kA3xcqym2f7UBUERHwUUqb7y4lL9a6lP_MujfbrIUWNKozfp8RAlg_wJufwMriIoYjYo-fCBCHo",
+        badge: "DURUM: 02_KONTROL // DENGE_PABUÇLARI",
+        metric: "4 YÖNLÜ HİDROLİK DENGE SABİT",
+        calloutTitle: "Gövde Denge Silindirleri",
+        calloutText: "Dolgu zemin üzerinde bağımsız açılan ayak pabuçları ile sıfır şasi esnemesi.",
+        tag: "[ HİDROLİK RİJİTLİK ]"
+      },
+      {
+        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBi2hXMtnvMXG1lf2eHKb6CSEurivih9-9SDCcb_t_k0_wt83yFEI2M6iPA9lB2rolyOOpHzJy9sqZROmkTmA8tgQZCCFv0HG5k82CAnFqeN0Xi9LkwAyLIAsT8sNEH4Aw7fvtHCunHNNM-b4T64vg8kGueARJOdGP4xARobrBVEKesX-G3a8ayZlo3XOjOcBFRLdwVT2-0mp24XD3owqoSECqh42zrkw0awQBgS9OWYvI7Z11VsZe4fVFTaHZb3RHQgg4",
+        badge: "DURUM: 03_ERİŞİM // TELESKOPİK_BOM",
+        metric: "YÜKSEK AÇILI GÖKYÜZÜ ERİŞİMİ",
+        calloutTitle: "Çok Kademeli Bom Erimi",
+        calloutText: "Açık sahada dar manevra alanından başlayan geniş açılı dikey ve yatay uzanım.",
+        tag: "[ TELESKOPİK MENZİL ]"
+      },
+      {
+        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuA4CxhGGLCUBSqzhYahm3FFSiMJwQuIjeiNBQHVg5drYpaNF1jlTLG8JXFe6k_FOvj9nH1phZF9_0fw9OmBolJ3TcxmoWP-an0HbSEPPJbgokblq6kxrjM9IsVmU8eOhm1sTIIwJJH-vdrVyLIueLRQmG79CLr3l9xvqKyffYcNAe-5hbh647MxLB-7QvKpNIOf91WxYKxBa8Xv8ibYByFRot8VwyHlHUSUyJQpejOiI2aPAHVhV149dS41btMlxJ6UzgM",
+        badge: "DURUM: 04_ÇÖZÜM // YAPI_ŞANTİYESİ",
+        metric: "MİLİMETRİK ÇATI VE KAT MONTAJI",
+        calloutTitle: "İnşaat Malzeme Tahliyesi",
+        calloutText: "Konut ve villa projelerinde kat zeminlerine paletli yükleme ve çatı yerleşimi.",
+        tag: "[ ŞANTİYE OPERASYONU ]"
+      }
+    ];
+
+    function setCraneState(index) {
+      const state = craneStates[index];
+      const img = document.getElementById('showcase-img');
+      const badge = document.getElementById('showcase-badge');
+      const metric = document.getElementById('state-metric');
+      const callout = document.getElementById('showcase-callout');
+
+      // Update Active Button styling
+      const buttons = document.querySelectorAll('.state-btn');
+      buttons.forEach((btn, i) => {
+        if (i === index) {
+          btn.classList.add('border-primary/80', 'bg-surface-container');
+          btn.classList.remove('border-outline-variant/30', 'bg-surface-dim');
+          const cap = btn.querySelector('.font-label-caps');
+          if (cap) {
+            cap.classList.add('text-primary');
+            cap.classList.remove('text-on-surface-variant');
+          }
+        } else {
+          btn.classList.remove('border-primary/80', 'bg-surface-container');
+          btn.classList.add('border-outline-variant/30', 'bg-surface-dim');
+          const cap = btn.querySelector('.font-label-caps');
+          if (cap) {
+            cap.classList.remove('text-primary');
+            cap.classList.add('text-on-surface-variant');
+          }
+        }
+      });
+
+      // Update Screen
+      img.style.opacity = '0.3';
+      setTimeout(() => {
+        img.src = state.image;
+        badge.innerText = state.badge;
+        metric.innerText = state.metric;
+        if (callout) {
+          callout.innerHTML = `
+            <div class="font-label-caps text-[10px] text-primary uppercase">${state.tag}</div>
+            <div class="font-headline-md text-body-md font-bold text-on-surface mt-1">${state.calloutTitle}</div>
+            <p class="font-code-spec text-code-spec text-on-surface-variant mt-1">${state.calloutText}</p>
+          `;
+        }
+        img.style.opacity = '1';
+      }, 180);
+    }
+
+    function handleQuoteSubmit(e) {
+      e.preventDefault();
+      const feedback = document.getElementById('form-feedback');
+      feedback.classList.remove('hidden');
+      e.target.reset();
+      setTimeout(() => {
+        feedback.classList.add('hidden');
+      }, 6000);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest text-on-surface-variant"><div class="w-full px-gutter-lg py-space-xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg mb-space-xl"><div class="md:col-span-5 flex flex-col justify-between"><div class="space-y-space-sm"><div class="flex items-center gap-space-sm mb-space-xs"><img alt="Pusat Vinç &amp; Platform Logo" class="h-12 w-auto object-contain bg-white rounded p-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0zgr_j3BZ279h3fHtYjIrcvJxmVU5M5nOCztZIUGbTHOFBcmiuK2zfmPELwShmmJ5DTzCSV-I4leU5B0hiQhsvZ0gOyNjCojH0fbvAul2UKeCCdImud7ohBM32gePsnBCCNdfeqMwKXR0zG2HVNq-yhoXi8i9lgWtEooymrHf71VFOmvWR2eUCmGXkHAiCx8p0dANgwWYY3qNsFf243eQsxVWOaI-x_00UzLg_q70WRqDjBfWBdaJN6pflWYr4LtHbVg"/><div class="flex flex-col"><div class="flex items-baseline gap-1"><span class="font-headline-lg text-headline-lg font-bold text-on-surface uppercase">PUSAT</span><span class="font-headline-lg text-headline-lg font-bold text-primary uppercase">VİNÇ</span></div><span class="font-label-caps text-[11px] text-primary uppercase tracking-widest">VİNÇ &amp; PLATFORM</span></div></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Ankara ve İç Anadolu merkezli ağır tonajlı mobil teleskopik vinç kiralama, endüstriyel montaj ve mimari altyapı kaldırma mühendisliği çözümleri.</p></div><div class="mt-space-md font-code-spec text-code-spec space-y-space-xs"><div class="text-on-surface font-semibold">OPERASYON MERKEZİ:</div><div class="text-on-surface-variant">0542 514 53 38 // 0 542 514 53 38</div><div class="text-primary">pusatvincknakliyat@gmail.com</div><div class="text-on-surface-variant text-[11px] mt-1">OSTİM OSB / ANKARA MERKEZLİ OPERASYON</div></div></div><div class="md:col-span-3 space-y-space-sm"><div class="font-label-caps text-label-caps uppercase text-on-surface tracking-widest">NAVİGASYON</div><ul class="space-y-space-xs font-code-spec text-code-spec"><li><a class="hover:text-primary transition-colors" data-path="hizmetler" href="#">01 // TELESKOPİK KALDIRMA</a></li><li><a class="hover:text-primary transition-colors" data-path="ekipman" href="#">02 // FİLO ÖZELLİKLERİ</a></li><li><a class="hover:text-primary transition-colors" data-path="galeri" href="#">03 // PROJE BELGELİĞİ</a></li><li><a class="hover:text-primary transition-colors" data-path="neden-biz" href="#">04 // GÜVENLİK STANDARTLARI</a></li><li><a class="hover:text-primary transition-colors" data-path="iletisim" href="#">05 // DOĞRUDAN İRTİBAT</a></li></ul></div><div class="md:col-span-4 flex flex-col justify-between space-y-space-md"><div class="space-y-space-xs"><div class="font-label-caps text-label-caps uppercase text-on-surface tracking-widest">DOĞRUDAN TEKLİF &amp; KEŞİF</div><p class="font-body-sm text-body-sm text-on-surface-variant">Saha zemin etüdü, tonaj hesabı ve bom yarıçapı simulasyonu için teknik ekibimizle irtibata geçin.</p></div><div class="p-space-md bg-surface-container-low"><div class="font-label-caps text-[10px] text-primary mb-space-xs">[ ANLIK DESTEK VE OPERASYON HATTI ]</div><a class="font-headline-md text-headline-md text-on-surface hover:text-primary font-semibold block transition-colors" href="tel:05425145338">0542 514 53 38</a><a class="font-code-spec text-code-spec text-primary hover:underline mt-space-xs block" href="mailto:pusatvincknakliyat@gmail.com">pusatvincknakliyat@gmail.com</a></div></div></div><div class="pt-space-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm font-label-caps text-label-caps text-on-surface-variant uppercase"><div class="flex items-center gap-space-md"><span>© 2025 PUSAT VİNÇ HİDROLİK A.Ş.</span><span>TMMOB UYUMLU</span></div><div><span>ANKARA / TÜRKİYE</span></div></div></div></footer></body></html>

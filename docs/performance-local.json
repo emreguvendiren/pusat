@@ -1,0 +1,9 @@
+{
+  "lcpMs": 128,
+  "cls": 0.0099,
+  "scope": "local-unthrottled",
+  "fcpMs": 80,
+  "domContentLoadedMs": 99,
+  "transferredBytes": 1515506,
+  "externalRequests": 0
+}

@@ -32,5 +32,5 @@ await writeFile(path.join(output, 'release.json'), JSON.stringify({
 for (const directory of ['images', 'fonts', 'vendor']) {
   await cp(path.join(root, 'assets', directory), path.join(output, 'assets', directory), { recursive: true });
 }
-await cp(path.join(root, 'assets/favicon.svg'), path.join(output, 'assets/favicon.svg'));
+await cp(path.join(root, 'assets/favicon.png'), path.join(output, 'assets/favicon.png'));
 console.log(`Static build ready: ${output}`);
